@@ -51,7 +51,7 @@ const App = () => {
 
   return (
     <>
-      <Flex justify="center" align="center" direction="column" style={{ maxWidth: '1400px', margin: '20px' }}>
+      <Flex justify="center" align="center" direction="column" style={{ maxWidth: '1100px' }}>
         <Tablee
           data={data!}
           columns={columns}
@@ -61,4 +61,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
