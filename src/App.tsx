@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import Tablee from './components/Table';
 import { useMemo } from 'react';
 import { ColumnDef } from '@tanstack/react-table';
+import { Flex } from '@mantine/core';
 
 const App = () => {
 
@@ -50,10 +51,12 @@ const App = () => {
 
   return (
     <>
-      <Tablee
-        data={data!}
-        columns={columns}
-      />
+      <Flex justify="center" align="center" direction="column" style={{ maxWidth: '1400px', margin: '20px' }}>
+        <Tablee
+          data={data!}
+          columns={columns}
+        />
+      </Flex>
     </>
   )
 }

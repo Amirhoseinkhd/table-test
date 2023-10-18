@@ -25,10 +25,16 @@ function Tablee({
   })
 
   return (
-    <Flex justify="center" align="center" direction="column" style={{ maxWidth: '100%' }}>
-      <Flex justify="center" align="center" />
+    <>
       <ScrollArea h={600} scrollbarSize={6} offsetScrollbars  >
-        <Table highlightOnHover withTableBorder withColumnBorders borderColor="gray" style={{ overflow: 'auto', maxWidth: '1000px' }}>
+        <Table
+          highlightOnHover
+          withTableBorder
+          withColumnBorders
+          striped
+          borderColor="gray"
+          style={{ overflow: 'auto', maxWidth: '1000px' }}>
+
           <Table.Thead>
             {table.getHeaderGroups().map(headerGroup => (
               <Table.Tr key={headerGroup.id}>
@@ -147,7 +153,7 @@ function Tablee({
           ))}
         </select>
       </Flex>
-    </Flex>
+    </>
   )
 }
 
